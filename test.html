@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ 
+img{
+    opacity:0;
+}
+img:hover{
+    opacity:50%;
+}
+ 
+a:active{
+    color:rgb(184, 147, 218);
+} 
+
+a:hover{
+    color:blue;
+}
+
+a:visited{
+    color:red;
+}
+body{
+    background-color: aqua;
+}
+div.example {
+background-color:yellow;
+padding:20;
+font-size:larger;
+}
+@media screen and (max-width: 500px){
+    div.example {
+display:none;
+    }
+    body{
+        background-color:blueviolet;
+    }
+    p{
+        color:rgb(247, 246, 248);
+    }
+}
+@media only screen and (max-width: 600px)
+</style>
+</head>
+<body>
+ 
+<h1><a href="https://www.linkedin.com/in/chen-feng-mba-pmp-b56620126/">This is heading 1</a></h1>
+<h1><a href="https://www.google.com">This is heading 2</a></h1>
+<h1><a href="https://www.baidu.com">This is heading 3</a></h1>
+<p>This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+<div class="example"><p>Another text</p></div>
+<img class ="img1" src = "lazysheep.jpg" alt = "Avatar"  border = "2"  height="250" witdth="200"/>
+ 
+</body>
+
+</html>

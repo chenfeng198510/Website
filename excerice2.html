@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Practice in Class</title>
+<head>
+    
+</head>    
+<h1>
+    Chen Feng's Answer:
+</h1>
+<style>
+    h1{
+        font-size: 30px;
+        color: white;
+        background-color: blueviolet;
+        width:33%;
+    }
+    body{
+        font-size:20px;
+        padding: 100px;
+    }
+</style>
+
+<body>  
+    <h3>Question1: Write a JavaScript program that accept two integers (4 and 10) and display the larger
+        <br></h3>
+     <p id="display"><br></p>
+     <h3>Question2: Write a JavaScript conditional statement to sort three numbers, largest to smallest. Display an alert box to show the result.
+        <br></h3>
+     <p id="display1">Before sorting, the number is 140,100,200<br>Click button to see the result of sorting (largest to smallest)<button onclick="myFunction()">Sort them</button><br></p>
+     <h3>Question3: Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+        <br></h3>
+     <p id="display2"></p> 
+     <h3>Question4: Write a JavaScript program to construct the following pattern, using a nested for loop.
+        <br></h3>
+     <p id="display3"></p>
+     <h3>Question5: Write a JavaScript program to sum the multiples of 3 and 5 under 1000<br></h3>
+     <p id="display4"></p> 
+     <script>
+        //Question 1 Part
+        let a = 4, b = 10;
+        if (a>b) {
+            document.getElementById("display").innerHTML =  a;
+        }
+            else {
+                document.getElementById("display").innerHTML =  b;
+            }
+    
+            
+        //Question 2 Part
+        const d = [140, 100, 200];
+    
+            d.sort(function(a, b){return b - a});
+            function myFunction() {
+      alert(d);
+    };
+       
+            //Question 3 Part
+    let c = "";
+            for (let i = 0; i<16; i++) {
+                if (i % 2 == 0) {
+                    c += i +" is Even" + "<br>"
+                    
+                }
+                else {
+                    c += i +" is odd" + "<br>"
+                    
+                }
+            }document.getElementById("display2").innerHTML = c;
+    
+        //Question 4 Part
+        const k = ["*","**","***","****","*****"];
+        let n =""
+        for (let h = 0; h<5; h++){
+            n +=k[h] + "<br>"
+        }
+            document.getElementById("display3").innerHTML = n;
+        
+            //Question 5 Part
+            let e=0;
+            for (let j = 0; j<1001; j++) {
+                if (j%3==0 && j%5==0){
+                    e+=j;
+                }
+                document.getElementById("display4").innerHTML = e;
+            }
+
+  </script>
+</body>
+</html>
