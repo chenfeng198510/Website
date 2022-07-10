@@ -4,19 +4,50 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        * {
+   <meta name="author" content="Chen Feng">
+
+<style>
+* {
   box-sizing:border-box;
+}
+
+body{
+    background-color:rgba(0, 0, 0, 0.644);
+    color:aliceblue;
+    font-size:20px;
+}
+
+.p {
+    float:inline-start
+}
+
+a:active {
+background-color:#fffefe;
+}
+
+a:visited {
+    color:#ffffff;
+}
+a:hover{
+    color:rgb(255, 0, 0);
+}
+
+a:link {
+    color:white;
+}
+
+::Selection{
+background: rgb(55, 18, 219);
 }
 
 h3 {
     text-align: center;
-    font-size:60px;
+    font-size:40px;
     font-weight:100px;
     color:rgb(250, 6, 6);
     margin-left: 80px;
 }
+
 h5{
     text-align: center;
     font-size:40px;
@@ -25,117 +56,8 @@ h5{
     margin-left: 80px;
 }
 
-.part1 {
-  width: 100%;
-  float:left;
-  display:inline
-}
-
-.part2 {
-    float: right;
-    margin-top: -1000px;
-  padding: 20px;
-  width: 50%;
- 
-
-  height: 1000px;
-  display:inline
-}
-
-.navbar {
-  float:left;
-  width: 50%;
-  height: 50px;
-  background: #050505cc;
-  padding: 5px;
-}
-.p {
-    float:inline-start
-}
-.l1 {
-    display:inline;
-    text-align: center;
-    padding: 14px 16px;
-    color:aliceblue;
-}
-.a:active {
-color:#b3e4e7;
-}
-.a:visited {
-    color:#e6beb9
-}
-.a:hover{
-    color:aqua;
-}
-
-
-.l2{
-    font-size: 40px;
-    color:#af574c;
-}
-.card {
-    border-bottom: 2px;
-    border-bottom-color: azure;        
-    background-color:rgba(0, 0, 0, 0.733);
-    transition: 0.3s;
-    padding: 100px;
-    width: 50%;
-    height: 500px
-        }
-    .card1 {
-    border-bottom: 2px;
-    border-bottom-color: azure;        
-    background-color:rgba(0, 0, 0, 0.568);
-    transition: 0.3s;
-    padding: 100px;
-    width: 50%;
-    height: 500px
-        }
-  .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.226);
-}
-.card1:hover {
-  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.226);
-}     
-        .container {
-            padding:2px 16px;
-            float:right;
-        }
-        .container1 {
-            padding:2px 16px;
-            float:left;
-        }
-        .list{
-        margin-right: 20%;
-            margin-top: 5%;
-            float:right;
-        }
-
-        .list1{
-            float:right;
-        }
-        .list2{
-            display:flex;
-            float:initial;
-           padding-top: 0px;
-           padding: 100px;
-        }
-        .textm{
-            padding: 100px;
-            text-align: center;
-        }
-        .textm1{
-         float:initial;
-           padding-top: 0px;
-           padding-left: 260px;
-           text-align: center;
-           margin-top: 0px;
-        }
-    .img1{
-        border-radius:50%;
-    }
-    .button {
-  background-color: #4CAF50; /* Green */
+.button {
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -144,42 +66,239 @@ color:#b3e4e7;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  
 }
+
+/*Navbar part */
+.navbar {
+  float:left;
+  width: 50%;
+  height: 50px;
+  background: #1a1919f3;
+  padding: 5px;
+}
+
+.l1 {
+    display:inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/*Left Side */
+.part1 {
+  width: 100%;
+  float:left;
+  display:inline
+}
+
+/* Here is BOX-LEFT&UP 1 Style*/
+.container {
+    padding:2px 16px;
+    float:right;
+}
+
+.container1 {
+    padding:2px 16px;
+    float:left;
+}
+
+.img1{
+    border-radius:50%;
+}
+.img1:hover{
+    border-radius:50%;
+    opacity:50%;
+}
+
+.card {
+    border-bottom: 2px;
+    border-bottom-color: azure;        
+    background-color:rgba(0, 0, 0, 0.733);
+    transition: 0.3s;
+    padding: 100px;
+    width: 50%;
+    height: 500px
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.226);
+}
+
+.textm{
+    padding: 100px;
+    text-align: center;
+}
+
 .button1 {background-color: #4CAF50;
     margin: -80px 200px;
     }
-.button2 {background-color: #f3ac12;
+
+/*Here is Box-Left&Down 2 Style*/
+.card1 {
+    border-bottom: 2px;
+    border-bottom-color: azure;        
+    background-color:rgba(0, 0, 0, 0.568);
+    transition: 0.3s;
+    padding: 100px;
+    width: 50%;
+    height: 500px
+        }
+
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.226);
+}  
+
+
+.textm1{
+         float:initial;
+           padding-top: 0px;
+           padding-left: 260px;
+           text-align: center;
+           margin-top: 0px;
+        }
+
+        .button2 {background-color: #f3ac12;
     margin: 80px 180px;
     }
+
+
+
+.list1{
+            float:right;
+        }
+
+
+/* Here is Right Side */
+.part2 {
+    float: right;
+    margin-top: -1000px;
+  padding: 20px;
+  width: 50%;
+  height: 1000px;
+  display:inline
+}
+
+
+
+
+.l2{
+    font-size: 40px;
+    color:#af574c;
+}
+
+
+.list2{
+            display:flex;
+            float:initial;
+           padding-top: 0px;
+           padding: 100px;
+}
+      
+
+
+/*Here is Right Side - form part */
+.form1{
+    padding-left:300px;
+}
+
+input[type="email"]:invalid{
+    outline:2px solid red;
+}
+
+input[type="email"]:valid{
+    outline:2px solid green;
+   }
+ 
+   .slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .navbar{
+display:none;
+    }
+    
+    .part1 {
+display:none;
+    }
+
+.part2 {
+  float:none;
+  width: 100%;
+  height: 5px;
+
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-size:15px;
+}
+.form1{
+    padding-left:100px;
+}
+}
     </style>
 </head>
 
+<!-- Here is Navbar Part -->
 <nav class="navbar">
-    <i class="fas fa-car"></i>
     <ul class = "list1" >
-      <li class="l1"><a href="#" style="color:aliceblue" >My Profile</a></li>
-      <li class="l1"><a href="#" style="color:aliceblue">My Stores</a></li>
-      <li class="l1"><a href="https://www.linkedin.com/in/chen-feng-mba-pmp-b56620126/" style="color:aliceblue">LinkedIn</a></li>
+      <li class="l1"><a href="excerice2.html">My Profile</a></li>
+      <li class="l1"><a href="test.html" >My Stores</a></li>
+      <li class="l1"><a href="https://www.facebook.com/profile.php?id=100006905807129" >My Facebook</a></li>
+      <li class="l1"><a href="https://www.linkedin.com/in/chen-feng-mba-pmp-b56620126/">LinkedIn</a></li>
     </ul>
-  </nav>
+</nav>
 
-<body>  
-        <div class="part1">   
-            <div class="card">
-                <div class="container">
-                 <img class ="img1" src = "fun5.jpg" alt = "Avatar"  border = "2"  height="250" witdth="200"/>
-                </div>
-                <div class="textm">
-                    <h2  style="color:aliceblue">Hello! This is Chen Feng</h2>
-                    <p style="color:aliceblue">A Poor Student with MBA degree and PMP certification.</p>
-                </div>
-                <button class="button button1">Make a Friend</button>
+<body>
+
+    <div class="part1">  
+<!-- Here is Box-Left&UP 1 part --> 
+        <div class="card">
+            <div class="container">
+                 <img class ="img1" src = "fun5.jpg" alt = "fun5"  border = "2"  height="250" witdth="200"/>
             </div>
-
+            <div class="textm">
+                <h2  style="color:aliceblue">Hello! This is Chen Feng</h2>
+                <p style="color:aliceblue">A Poor Student with <b>MBA</b> degree and <b>PMP certification</b>.</p>
+            </div>
+                <button class="button button1">Make a Friend</button>
+        </div>
+<!-- Here is Box-Left&Down 2 part --> 
                 <div class="card1">
                     <div class="container1">
-                    <img src = "fun2.jpg" alt = "Avatar" border = "2"  height="250" witdth="200"/>
+                    <img class ="img1" src = "fun2.jpg" alt = "fun2" border = "2"  height="250" witdth="200"/>
                     </div>
                     <div class="textm1">
                     <h2 style="color:aliceblue">Introduction About Me</h2>
@@ -188,27 +307,73 @@ color:#b3e4e7;
             Currently, I am studying Software Development in Focus College 
             and working for Canucks.</p>
 
-                        <ul style="list-style-type:circle">
-                        <li class="l1"><a href="#" style="color:aliceblue">Education</a></li>
-                        <li class="l1"><a href="#" style="color:aliceblue">Work Experience</a></li>
-                        </ul>  
+                    <ul style="list-style-type:circle">
+                    <li class="l1"><a href="#" >Education</a></li>
+                    <li class="l1"><a href="#" >Work Experience</a></li>
+                    </ul>  
                     </div>
-                    <button class="button button2">More Stories</button>    
+                <button class="button button2">More Stories</button>    
                 </div>
-            </div>
-        <div class="part2">
-            <h3>Chen Feng </h3>
-            <h5>不知道这部分到底弄啥好，怎么办</h5>
-            <div class="list">
-                <ul style="list-style-type:square">
-                    <li Class="l2">Lazy</li>
-                    <li Class="l2">Drink too much</li>
-                    <li Class="l2">Eat too much</li>
-                    <li Class="l2">I dont know what I need to talk</li>
+    </div>
+
+<!-- Here is  Part 2 -->    
+    <div class="part2" id="p2">
+            <h3>Let's become friends!</h3>
+            <br><br>
+            <div class="form1">
+            <form>
+                <label for="name">What is your name:</label><input type="text" id="name" required><br><br>
+        
+                <label for="Gender">Gender</label>>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+        
+                <label for="address">Address</label><br><textarea row="5" cols="30" id="address"></textarea><br><br>
+        
                 
-                </ul>  
-            </div>
+                <label for="socialmedia">Social Media</label>
+                <input type="url" id="socialmedia"><br><br>
+        
+                <label for="date">When you are availiable to meet:</label>
+                <input type="date" value="2022-07-07" id="date"><br><br>
+        
+                <label for="time">Meeting Time:</label>
+                <input type="time" id="localtime"><br><br>
+        
+                <label for="location">Visiting Location:</label><br>
+                <select name="location" id="city">
+                <option value="vancouver">Vancouver</option>
+                <option value="bunaby">Burnaby</option>
+                <option value="richmond">Richmond</option>
+                <option value="surrey">Surrey</option>
+                <option value="Toronto">Toronto</option>
+                <option value="other">other</option>
+                </select><br>
+                <label for="other">Other Location</label><br>
+                <textarea row="5" cols="30" id="other"></textarea>
+                <br><br>
+        
+                <label for="often">Usual Number of Meeting per Week</label>
+                <input type="number" min="1" max="100" step="1" id="ofen"><br><br>
+        
+                <label for="rating">Rating of Our Friendship:</label><br>
+                <input type="range" min="1" max="10" Step="0.25" id="rating" class="slider">
+                <br><br>
+                <label for="mycolor">Which Color You Like: </label>
+                <input type="color" value="#4CAF50" id="mycolor">
+                <br><br><br><br>
+                <button type="sumbit" value="submit">Submit</button>
+                <button type="reset" value="reset">Reset</button>
+            </form>
         </div>
+    </div>
   
 </body>
 </html>

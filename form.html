@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <style>
+   input[type="email"]:invalid{
+    outline:2px solid red;
+   }
+   input[type="email"]:valid{
+    outline:2px solid green;
+   }
+ 
+   .slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+    </style>
+    <head>
+        <h1>Form</h1>
+    </head>
+    <body>
+    <form>
+        <label for="name">Name:</label><input type="text" id="name" required><br><br>
+
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="address">Address</label><br><textarea row="5" cols="30" id="address"></textarea><br><br>
+
+        
+        <label for="socialmedia">Social Media</label>
+        <input type="url" id="socialmedia"><br><br>
+
+        <label for="date">Visiting Date:</label>
+        <input type="date" value="2022-07-07" id="date"><br><br>
+
+        <label for="time">Visiting Time:</label>
+        <input type="time" id="localtime"><br><br>
+
+        <br><br>
+        <label for="location">Visiting Location:</label><br>
+        <select name="location" id="city">
+        <option value="vancouver">Vancouver</option>
+        <option value="bunaby">Burnaby</option>
+        <option value="richmond">Richmond</option>
+        <option value="surrey">Surrey</option>
+        <option value="Toronto">Toronto</option>
+        </select>
+        <br><br>
+
+        <label for="often">Usual Number of Visits per Week</label>
+        <input type="number" min="1" max="100" step="1" id="ofen"><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="range" min="1" max="10" Step="0.25" id="rating" class="slider">
+        <br><br>
+        <label for="mycolor">Select a Color: </label>
+        <input type="color" value="#4CAF50" id="mycolor">
+        <br><br><br><br>
+        <button type="sumbit" value="submit">Submit</button>
+        <button type="reset" value="reset">Reset</button>
+    </form>
+
+</body>
+</html>
